@@ -1,38 +1,127 @@
 .App {
+  padding: 20px;
+  color: rgb(141, 222, 247);
+  text-align: center;
+  background-color: #333;
+  min-height: 100vh;
+}
+
+.App a {
+  text-decoration: none;
+  color: rgb(141, 222, 247);
+}
+
+.button {
+  color: rgb(141, 222, 247);
+  padding: 15px;
+  margin: 10px;
+  background-color: transparent;
+  border: solid 3px rgb(141, 222, 247);
+  border-radius: 5px;
+  box-shadow: 0 1px 7px 1px #222;
+}
+
+.input-form {
+  text-align: start;
+  width: 300px;
+  margin: auto;
+}
+
+.input-form h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.reg-input,
+.log-input {
+  width: 90%;
+  padding: 10px;
+  margin: 5px;
+  background-color: transparent;
+  color: rgb(141, 222, 247);
+  border: solid 2px rgb(141, 222, 247);
+  border-radius: 5px;
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.log-input:hover {
+  border-color: rgb(108, 183, 206);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.reg-input:hover {
+  border-color: rgb(108, 183, 206);
+}
+
+.log-input:focus {
+  border-color: rgb(186, 231, 245);
+}
+
+.reg-input:focus {
+  border-color: rgb(186, 231, 245);
+}
+
+.label {
+  margin-left: 5px;
+}
+
+.register-button,
+.login-button {
+  width: 100%;
+  margin: 15px 3px;
+}
+
+.input-empty {
+  font-size: 12px;
+  color: #ff8404;
+  margin-left: 10px;
+}
+
+.error {
+  font-size: 12px;
+  color: #ff8404;
+  margin-left: 10px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.barters {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.barter {
+  border: solid 3px rgb(186, 231, 245);
+  border-radius: 10px;
+  margin: 10px 0;
+  width: 48%;
+}
+
+.barter h3 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* .barter h1 {
+  color: white;
+} */
+
+.barter-description {
+  background-color: rgb(186, 231, 245);
+  color: #444;
+  padding: 1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.barter-offer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.barter-learn {
+  margin: 0 auto;
+}
+
+.barter-teach {
+  margin: 0 auto;
 }
