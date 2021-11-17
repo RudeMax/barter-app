@@ -14,8 +14,6 @@ const loginReducer = (state = initState, action) => {
         loginError: "",
       };
     case "FETCH_LOGIN_SUCCESS":
-      localStorage.setItem("token", JSON.stringify(action.payload.token));
-      localStorage.setItem("user", JSON.stringify(action.payload));
       return {
         ...state,
         isAuthenticated: true,

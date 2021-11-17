@@ -39,6 +39,7 @@ function Login({
       case "password":
         setPasswordDirty(true);
         break;
+      default:
     }
   };
 

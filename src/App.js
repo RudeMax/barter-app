@@ -6,7 +6,8 @@ import BarterList from "./Components/BarterList";
 import Login from "./Components/Login";
 import Registration from "./Components/Registration";
 import { useDispatch } from "react-redux";
-import { SET_USER } from "./redux/auth/actions";
+import { SET_USER } from "./redux/auth/actions-types";
+import AddBarter from "./Components/AddBarter";
 
 function App() {
   const dispatch = useDispatch();
@@ -22,7 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      <img src={logo} className="logo" />
+      <img src={logo} alt="Barter" className="logo" />
       <h1>Welcome to Barter App</h1>
 
       <BrowserRouter>
@@ -31,6 +32,7 @@ function App() {
           <Switch>
             <Route exact path="/registration" component={Registration} />
             <Route exact path="/login" component={Login} />
+            <Route exact path="/addBarter" component={AddBarter} />
             <Route exact path="/barterList" component={BarterList} />
           </Switch>
         </div>

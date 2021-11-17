@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { LOGOUT_USER } from "../redux/auth/actions";
+import { LOGOUT_USER } from "../redux/auth/actions-types";
 
 function Header() {
   const history = useHistory();

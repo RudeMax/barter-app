@@ -86,8 +86,8 @@
 }
 
 .barters {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex; */
+  /* justify-content: space-between; */
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -95,8 +95,12 @@
 .barter {
   border: solid 3px rgb(186, 231, 245);
   border-radius: 10px;
-  margin: 10px 0;
-  width: 48%;
+  margin: 20px auto;
+  width: 70%;
+}
+
+.barter h1 {
+  color: #ff8404;
 }
 
 .barter h3 {
@@ -118,10 +122,77 @@
   justify-content: space-between;
 }
 
+.barter-offer button {
+  width: 100px;
+}
+
 .barter-learn {
   margin: 0 auto;
 }
 
 .barter-teach {
   margin: 0 auto;
+}
+
+.edit-head {
+  width: 100%;
+  background-color: rgb(186, 231, 245);
+  color: #444;
+  padding: 1px;
+}
+
+.add-comment {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.add-comment textarea {
+  width: 75%;
+  border-radius: 10px;
+  margin: 0 10px;
+  resize: none;
+  padding: 10px;
+}
+
+.comments-list {
+  border: solid 2px rgb(186, 231, 245);
+  margin: 10px;
+  border-radius: 10px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(206, 236, 245);
+  background-color: #333;
+}
+
+.comments-list p {
+  margin-left: 10px;
+}
+
+.comments-list h2 {
+  margin-left: 30px;
+}
+
+.comments-list button {
+  max-height: 50px;
+  margin: auto;
+  margin-right: 10px;
+}
+
+.comments {
+  /*max-height: 200px;*/
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-top: solid 2px rgb(186, 231, 245);
+  background-color: #444;
+}
+
+.date-created {
+  color: #999;
+  font-size: 10px;
+  margin-bottom: 0;
+}
+
+.comment-author {
+  margin-top: 0;
 }

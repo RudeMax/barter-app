@@ -42,6 +42,7 @@ function Registration() {
       case "confirmPassword":
         setConfirmPasswordDirty(true);
         break;
+      default:
     }
   };
 
